@@ -9,7 +9,7 @@ export default class Login extends Component {
   };
   render() {
     return (
-      <div style={{padding:'0 20%'}}>
+      <div style={{padding:'0 25%'}}>
         <div className="form-header">
           <h1>Login</h1>
         </div>

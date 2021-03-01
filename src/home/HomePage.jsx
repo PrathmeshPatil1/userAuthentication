@@ -7,18 +7,17 @@ export class HomePage extends React.Component {
         super(props);
 
         this.state = {
-            currentUser: authService.currentUserValue,
-            userFromApi: null
+            currentUser: authService.currentUserValue
         };
     }
 
     render() {
         const { currentUser } = this.state;
         return (
-            <div>
-                <h1>Home</h1>
+            <div style={{textAlign:'center'}}>
+                <h1>Home Page</h1>
                 <p>Your role is: <strong>{currentUser.role}</strong>.</p>
-                <p>This page can be accessed by all authenticated users.</p>
+                <p>This page is for all authenticated users.</p>
             </div>
         );
     }
